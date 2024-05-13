@@ -15,6 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
+# Inherit some Halium stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay_lineage \
